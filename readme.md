@@ -21,7 +21,10 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+## Credit
 
-## Font
+### WebGL Background
+- [Bruno Simon](brunosimon/experiment-holographic-terrain)
 
-- https://befonts.com/ailerons-typeface.html
+### Font
+- [Ailerons](https://befonts.com/ailerons-typeface.html)

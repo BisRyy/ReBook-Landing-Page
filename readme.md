@@ -2,9 +2,10 @@
     
 
 ## Links
-
-- [GitHub](https://github.com/BisRyy/ReBook-Landing-Page)
-- [Live](https://read-book-rosy.vercel.app/#features)
+- [ReBook App]()
+- [App Github]
+- [Website Live](https://read-book-rosy.vercel.app)
+- [Website GitHub](https://github.com/BisRyy/ReBook-Landing-Page)
 
 ## Setup
 

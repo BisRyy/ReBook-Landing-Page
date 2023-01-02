@@ -25,18 +25,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <canvas class="webgl"></canvas>
-    <div class="title" contenteditable="" spellcheck="false">
+
+    <div class="title" contenteditable="false" spellcheck="false">
         Rebook
         <p class="sub-title">Get the Book You always wanted</p>
     </div>
-    <div class="menu full">
+
+    <div class="menu">
         <div class="bar bar-0"></div>
         <div class="bar bar-1"></div>
         <div class="bar bar-2"></div>
     </div>
+
     <!-- <div class="credits">
         Demo landing page by 
         <a href="https://experiment-holographic-terrain.vercel.app" target="_blank">
@@ -57,14 +62,14 @@
 
       </ul>
     </nav>
-    </div>
+    
     <section id="features">
-      <h2>ReBook offers the Best:</h2>
+      <h2 class="feature-title">ReBook offers the Best:</h2>
       <ul>
         <li>
           <img src="#" alt="icon representing recommendation algorithm">
           <h3>Personalized Recommendations</h3>
-          <p> Based on your reading history and preferences, Our advanced recommendation algorithm suggests woll provide customized book recommendations just for you.</p>
+          <p> Based on your reading history and preferences, Our advanced recommendation algorithm will provide customized book recommendations just for you.</p>
         </li>
         <li>
           <img width="20rem" src="../static/about.png" alt="icon representing large book catalog" id="img2">
@@ -80,6 +85,7 @@
     </section>
     
     <section id="about">
+      <h2>Meet The Developers</h2>
       <div class="card">
         <div class="img-bx">
             <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
@@ -130,7 +136,7 @@
       </div>
     </section>
 
-    <section class="demo">
+    <section id="demo">
       <ul class="slides">
         <input type="radio" name="radio-btn" id="img-1" checked />
         <li class="slide-container">

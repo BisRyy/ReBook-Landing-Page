@@ -1,9 +1,10 @@
-# Experiment - Holographic Terrain
+# ReBook-Landing-Page
+    
 
 ## Links
 
-- [GitHub](https://github.com/brunosimon/experiment-holographic-terrain)
-- [Live](https://experiment-holographic-terrain.vercel.app)
+- [GitHub](https://github.com/BisRyy/ReBook-Landing-Page)
+- [Live](https://read-book-rosy.vercel.app/#features)
 
 ## Setup
 

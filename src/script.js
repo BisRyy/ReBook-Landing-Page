@@ -13,6 +13,7 @@ import terrainDepthVertexShader from './shaders/terrainDepth/vertex.glsl'
 import terrainDepthFragmentShader from './shaders/terrainDepth/fragment.glsl'
 import overlayVertexShader from './shaders/overlay/vertex.glsl'
 import overlayFragmentShader from './shaders/overlay/fragment.glsl'
+import featureImg1 from '../static/about.png'
 
 /**
  * Base
@@ -32,7 +33,7 @@ const gui = new Guify({
     width: '300px',
     barMode: 'none'
 })
-// gui.panel.ToggleVisible()
+gui.panel.ToggleVisible()
 
 const guiDummy = {}
 guiDummy.clearColor = '#080024'
@@ -69,6 +70,15 @@ window.addEventListener('resize', () =>
     bokehPass.renderTargetDepth.width = sizes.width * sizes.pixelRatio
     bokehPass.renderTargetDepth.height = sizes.height * sizes.pixelRatio
 })
+
+
+/**
+ * Images
+ */
+const feature =  document.querySelectorAll("img")
+feature[0].src = featureImg1;
+feature[1].src = featureImg1;
+feature[2].src = featureImg1;
 
 /**
  * Camera
@@ -190,7 +200,7 @@ gui
         folder: 'terrain',
         type: 'folder',
         label: 'terrainTexture',
-        open: true
+        open: false
     })
     
 gui
@@ -296,7 +306,7 @@ gui
         folder: 'terrain',
         type: 'folder',
         label: 'terrainMaterial',
-        open: true
+        open: false
     })
 
 gui
@@ -568,7 +578,7 @@ gui
     .Register({
         type: 'folder',
         label: 'overlay',
-        open: true
+        open: false
     })
 
 gui
@@ -652,7 +662,7 @@ gui
     .Register({
         type: 'folder',
         label: 'renderer',
-        open: true
+        open: false
     })
 
 gui
@@ -705,7 +715,7 @@ gui
     .Register({
         type: 'folder',
         label: 'bokehPass',
-        open: true
+        open: false
     })
 
 gui
@@ -762,7 +772,7 @@ gui
     .Register({
         type: 'folder',
         label: 'unrealBloomPass',
-        open: true
+        open: false
     })
 
 gui

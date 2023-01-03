@@ -1,11 +1,9 @@
-# ReBook-Landing-Page
-    
+# Experiment - Holographic Terrain
 
 ## Links
-- [ReBook App]()
-- [App Github](http://rebook.duresa.tech:5000/)
-- [Website Live](https://read-book-rosy.vercel.app)
-- [Website GitHub](https://github.com/BisRyy/ReBook-Landing-Page)
+
+- [GitHub](https://github.com/brunosimon/experiment-holographic-terrain)
+- [Live](https://experiment-holographic-terrain.vercel.app)
 
 ## Setup
 
@@ -22,10 +20,7 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
-## Credit
 
-### WebGL Background
-- [Bruno Simon](brunosimon/experiment-holographic-terrain)
+## Font
 
-### Font
-- [Ailerons](https://befonts.com/ailerons-typeface.html)
+- https://befonts.com/ailerons-typeface.html

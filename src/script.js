@@ -13,7 +13,11 @@ import terrainDepthVertexShader from './shaders/terrainDepth/vertex.glsl'
 import terrainDepthFragmentShader from './shaders/terrainDepth/fragment.glsl'
 import overlayVertexShader from './shaders/overlay/vertex.glsl'
 import overlayFragmentShader from './shaders/overlay/fragment.glsl'
-import featureImg1 from '../static/about.png'
+// import featureImg1 from '../static/about.png'
+import recommendImg from '../static/recommend.png'
+import bookStackImg from '../static/books.png'
+import communityImg from '../static/group.png'
+import rocketImg from '../static/images/rocket image.png'
 
 /**
  * Base
@@ -76,9 +80,10 @@ window.addEventListener('resize', () =>
  * Images
  */
 const feature =  document.querySelectorAll("img")
-feature[0].src = featureImg1;
-feature[1].src = featureImg1;
-feature[2].src = featureImg1;
+feature[0].src = recommendImg;
+feature[1].src = bookStackImg;
+feature[2].src = communityImg;
+feature[3].src = rocketImg;
 
 /**
  * Camera

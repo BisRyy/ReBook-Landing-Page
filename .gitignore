@@ -84,6 +84,7 @@ web_modules/
 
 # Optional npm cache directory
 .npm
+# .vercel
 
 # Optional eslint cache
 .eslintcache
@@ -152,3 +153,4 @@ dist
 .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,node
+.vercel

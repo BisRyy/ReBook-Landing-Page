@@ -1,10 +1,13 @@
 {
   "repository": "#",
+  "homepage": "https://bisryy.github.io/rebook",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@babel/core": "^7.14.6",
@@ -30,5 +33,8 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

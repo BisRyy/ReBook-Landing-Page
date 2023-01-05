@@ -19,4 +19,4 @@ npm run build
 ### WebGL Background
 - [Bruno Simon](brunosimon/experiment-holographic-terrain)
 ### Font
-- [Ailerons](https://befonts.com/ailerons-typeface.html
+- [Ailerons](https://befonts.com/ailerons-typeface.html)

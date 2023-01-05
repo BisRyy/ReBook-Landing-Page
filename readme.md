@@ -1,7 +1,6 @@
 ## Links
-- [ReBook App]()
-- [App Github]
-- [App Github](http://rebook.duresa.tech:5000/)
+- [ReBook App](http://rebook.duresa.tech:5000/)
+- [App Github](https://github.com/BisRyy/ReBook)
 - [Website Live](https://read-book-rosy.vercel.app)
 - [Website GitHub](https://github.com/BisRyy/ReBook-Landing-Page)
 

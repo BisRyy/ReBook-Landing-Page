@@ -4,232 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Valley - Experiment</title>
+    <title>ReBook - Book Recommendations</title>
 
-    <meta itemprop="name" content="Valley - Experiment">
-    <meta itemprop="description" content="Creative WebGL experiment with Three.js">
-    <meta itemprop="image" content="https://experiment-holographic-terrain.vercel.app/social/share-1200x630.png">
+    <meta itemprop="name" content="ReBook - Book Recommendations">
+    <meta itemprop="description" content="A community with the best algorithm for books recommendation and reviews.">
+    <meta itemprop="image" content="https://re-book.vercel.app/images/rocket image.png">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Valley - Experiment">
-    <meta name="twitter:description" content="Creative WebGL experiment with Three.js">
-    <meta name="twitter:image" content="https://experiment-holographic-terrain.vercel.app/social/share-1200x630.png">
-
-    <meta property="og:site_name" content="Valley - Experiment">
+    <meta property="og:site_name" content="ReBook - Book Recommendations">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://experiment-holographic-terrain.vercel.app">
-    <meta property="og:title" content="Valley - Experiment">
-    <meta property="og:description" content="Creative WebGL experiment with Three.js">
-    <meta property="og:image" content="https://experiment-holographic-terrain.vercel.app/social/share-1200x630.png">
+    <meta property="og:url" content="https://re-book.vercel.app/images/rocket image.png">
+    <meta property="og:title" content="ReBook - Book Recommendations">
+    <meta property="og:description" content="A community with the best algorithm for books recommendation and reviews.">
+    <meta property="og:image" content="https://re-book.vercel.app/images/rocket image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <canvas class="webgl"></canvas>
-
-    <div class="title" contenteditable="false" spellcheck="false">
-        Rebook
-        <p class="sub-title">Get the Book You always wanted</p>
-    </div>
-
-    <div class="menu">
-        <div class="bar bar-0"></div>
-        <div class="bar bar-1"></div>
-        <div class="bar bar-2"></div>
-    </div>
-
-    <!-- <div class="credits">
-        Demo landing page by 
-        <a href="https://experiment-holographic-terrain.vercel.app" target="_blank">
-            Bruno Simon
-        </a> 
-            (
-                <a href="https://github.com/brunosimon/experiment-holographic-terrain" target="_blank">
-                    Source code
-                </a>
-            )
-    </div> -->
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="#service-s">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">ReBook</h1>
+        </div>
     </nav>
-    
-    <section id="features">
-      <div class="features-container">
-          <h2 class="section-title">ReBook offers the Best:</h2>
-        <ul>
-          <li>
-            <img src="#" alt="icon recommendation">
-            <h3>Personalized Recommendations</h3>
-            <p> Based on your reading history and preferences, Our advanced recommendation algorithm will provide customized book recommendations just for you.</p>
-          </li>
-          <li>
-            <img width="20rem" src="../static/about.png" alt="icon book catalog" id="img2">
-            <h3>Wide Selection</h3>
-            <p>With millions of books to choose from, you'll be able to find something that interests you no matter your tastes and never run out of books to discover and read.</p>
-          </li>
-          <li>
-            <img src="#" alt="icon Community">
-            <h3>Community Blog</h3>
-            <p>Post your best readings and Connect with other book lovers in our community forum to discuss your favorite reads and get recommendations from fellow readers.</p>
-          </li>
-        </ul>
-      </div>
+
+    <div id="feature" class="feature-container container">
+      <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+          <div class="title" id="home" contenteditable="false" spellcheck="false">
+            <div class="main-title">Rebook</div>
+            <p class="title sub-title">Get the Book You always wanted</p>
+            <a href="https://rebook.duresa.tech:5000/" class="btn btn-primary" target="_blank"> JOIN US  <span class="fa fa-arrow-right checked"></span> </a> &nbsp;
+            
+            <a href="https://Github.com/bisryy/Rebook" class="btn btn-secondary" target="_blank"><span class="fa fa-github checked"></span> Github </a> &nbsp;
+            <a href="https://re-book.vercel.app/images/ReBook.apk" download class="btn btn-primary" target="_blank"><span class="fa fa-download checked"></span> Download App</a> 
+            
+        </div>
+        </div>
     </section>
     
-    <section id="about">
-      <div class="about-container">
-        <h2>Inspiration</h2>
-        <img src="#" alt="rocket">
-        <p>
-          As avid readers and lifelong learners, we were constantly on the lookout for new and exciting books to add to our reading lists. However, we found it challenging to discover new titles beyond the bestseller lists and popular recommendations. That's when we had the idea to create a community where readers could share their favorite books and discover new ones through personalized recommendations. <br><br>
+    <h2 id="service-s" class="title" style="font-size: 2.5rem;"> Features </h2>
+    <section id="services" class="cards">
+      <div class="card-supervisor">
+        <div class="card-image">
+          <img src="https://re-book.vercel.app/images/books.png">
+        </div>
+        <h1 class="card-title">Wide Selection</h1>
+        <p class="card-paragraph">With millions of books to choose from, you'll be able to find something that interests you no matter your tastes and never run out of books to discover and read.</p>
+      </div>
+      
+      <div class="card-team-builder">
+        <div class="card-image">
+          <img src="https://re-book.vercel.app/images/recommend.png">
+        </div>
+        <h1 class="card-title">Personalized Recommendations</h1>
+        <p class="card-paragraph">Based on your reading history and preferences, Our advanced recommendation algorithm will provide customized book recommendations just for you.</p>
+      </div>
+      
+      <div class="card-karma">
+        <div class="card-image">
+          <img src="https://re-book.vercel.app/images/rocket image.png">
+        </div>
+        <h1 class="card-title">Reading Tracker</h1>
+        <p class="card-paragraph">Users will be able to create an account, log in, and track their reading progress for the books they’ve read and for the books on their to-read list.</p>
+      </div>
   
-          Our webapp connects readers from all over the world and allows them to share their reading interests and experiences. By joining our community, you can discover new books through recommendations from like-minded readers, keep track of the books you've read and want to read, and even write reviews to help others in their reading journey. <br><br>
-        
-          We hope our webapp will be a valuable resource for you as you explore new genres, authors, and titles. Happy reading!
-        </p>
+      <div class="card-calculator">
+        <div class="card-image">
+          <img src="https://re-book.vercel.app/images/group.png">
+        </div>
+        <h1 class="card-title">Community Blog</h1>
+        <p class="card-paragraph">Post your best readings and Connect with other book lovers in our community forum to discuss your favorite reads and get recommendations from fellow readers.</p>
       </div>
     </section>
-    
-    <section class="cards">
-      <h2>Meet The Developers</h2>
-      <div class="card">
-        <div class="img-bx">
-            <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
-        </div>
-        <div class="content">
-            <div class="detail">
-                <h2>Emilia Roy<br /><span>Senior Designer</span></h2>
-                <ul class="sci">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-    <div class="card">
-      <div class="img-bx">
-          <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
+
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-img">
+          <img src="https://re-book.vercel.app/images/rocket image.png" alt="about us" />
+        </div>
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2>The Story of ReBOOK.</h2>
+          <p> As avid readers and lifelong learners, we were constantly on the lookout for new and exciting books to add to our reading lists. However, we found it challenging to discover new titles beyond the bestseller lists and popular recommendations. That's when we had the idea to create a community where readers could share their favorite books and discover new ones through personalized recommendations. <br><br>
+            
+            Our webapp connects readers from all over the world and allows them to share their reading interests and experiences. By joining our community, you can discover new books through recommendations from like-minded readers, keep track of the books you've read and want to read, and even write reviews to help others in their reading journey. <br><br>
+            
+            We hope our webapp will be a valuable resource for you as you explore new genres, authors, and titles. Happy reading!
+          </p>
+        </div>
       </div>
-          <div class="content">
-              <div class="detail">
-                  <h2>Emilia Roy<br /><span>Senior Designer</span></h2>
-                  <ul class="sci">
-                      <li>
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li>
-                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                      <li>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+  </section>
+
+    <section id="testimonials">
+        <h2 class="testimonial-title title">Meet the developers</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://re-book.vercel.app/images/bisrat.jpg" alt="" />
+                        <p class="customer-name">Bisrat Kebere</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                  Passionate Engineer with continous drive to excel his ability through learning and doing. Believes that he will place his mark in the development of his country as well as the whole world. Mainly interested in producing real software products that could be useful in day to day life of people. 
+                </p>
+                <div class="star-rating">
+                  <a href="https://bisry.me"><span class="fa fa-home checked"></span></a>
+                  <a href="mailto:kiyyakebere@gmail.com"><span class="fa fa-envelope checked"></span></a>
+                  <a href="https://twitter.com/bisryyy"><span class="fa fa-twitter checked"></span></a>
+                  <a href="https://bisry.t.me"><span class="fa fa-telegram checked"></span></a>
+                  <a href="https://github.com/bisryy"><span class="fa fa-github checked"></span></a>
+                  <a href="https://www.linkedin.com/in/BisRy"><span class="fa fa-linkedin checked"></span></a>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://re-book.vercel.app/images/duresa.jpg" alt="" />
+                        <p class="customer-name">Duressa Feyissa</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                  An adventurous person looking for the right wave to sail. Knowledge is power and where it hits the highest is where to sail. Sailing across the ocean from the highest wave to entering the deepest ocean struggling and at the most losing faith moments finds one's self at the other side of the ocean where all the hidden jewelery are at. In the end, Realizes the hidden jewlery was all ability of one's self.
+                </p>
+                <div class="star-rating">
+                  <a href="https://duresa.tech"><span class="fa fa-home checked"></span></a>
+                  <a href="mailto:duresafeyisa2014@gmail.com"><span class="fa fa-envelope checked"></span></a>
+                  <a href="https://www.facebook.com/profile.php?id=100084706242764"><span class="fa fa-facebook checked"></span></a>
+                  <a href="https://kenafg.t.me"><span class="fa fa-telegram checked"></span></a>
+                  <a href="https://github.com/duressa-feyissa/"><span class="fa fa-github checked"></span></a>
+                  <a href="https://www.linkedin.com/in/BisRy"><span class="fa fa-linkedin checked"></span></a>
+                </div>
+
+            </div>
+        </div>
     </section>
-
-    <section id="demo">
-      <ul class="slides">
-        <input type="radio" name="radio-btn" id="img-1" checked />
-        <li class="slide-container">
-        <div class="slide">
-          <img src="https://cdn.sweetescape.com/images/cities/mumbai/cover/cb0b7f6c-eb50-4d2a-a35f-43deadc5d480-1080.jpg" />
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://re-book.vercel.app/images/robot.png" alt="" />
             </div>
-        <div class="nav">
-          <label for="img-6" class="prev">&#x2039;</label>
-          <label for="img-2" class="next">&#x203a;</label>
-        </div>
-        </li>
 
-        <input type="radio" name="radio-btn" id="img-2" />
-        <li class="slide-container">
-            <div class="slide">
-              <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-taj-mahal.jpg" />
+            <div class="form-container">
+                <h2 class="title" >Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
             </div>
-        <div class="nav">
-          <label for="img-1" class="prev">&#x2039;</label>
-          <label for="img-3" class="next">&#x203a;</label>
         </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-3" />
-        <li class="slide-container">
-            <div class="slide">
-              <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-mehrangarh-fort.jpg" />
-            </div>
-        <div class="nav">
-          <label for="img-2" class="prev">&#x2039;</label>
-          <label for="img-4" class="next">&#x203a;</label>
-        </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-4" />
-        <li class="slide-container">
-            <div class="slide">
-              <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202212/agra-fort-lit-up-at-night_1-sixteen_nine.jpeg?VersionId=1xk2mylLHInFLCz1fSb3pv.niQ5HZTGM&size=690:388" />
-            </div>
-        <div class="nav">
-          <label for="img-3" class="prev">&#x2039;</label>
-          <label for="img-5" class="next">&#x203a;</label>
-        </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-5" />
-        <li class="slide-container">
-            <div class="slide">
-              <img src="https://www.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities.jpg" />
-            </div>
-        <div class="nav">
-          <label for="img-4" class="prev">&#x2039;</label>
-          <label for="img-6" class="next">&#x203a;</label>
-        </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-6" />
-        <li class="slide-container">
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg" />
-            </div>
-        <div class="nav">
-          <label for="img-5" class="prev">&#x2039;</label>
-          <label for="img-1" class="next">&#x203a;</label>
-        </div>
-        </li>
-
-        <li class="nav-dots">
-          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-        </li>
-      </ul>
     </section>
-
+    <footer id="footer">
+        <div class="icons-container">  
+          <a href="mailto:dev@bisrat.tech" class="icons">
+              <i class="fa fa-envelope"></i>
+          </a>  
+          <a href="https://re-book.vercel.app" class="icons">
+              <i class="fa fa-share"></i>
+          </a>
+          <a href="https://t.me/brebook" class="icons">
+              <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://t.me/Rebook_robot" class="icons">
+              <i class="fa fa-robot"></i>
+          </a>
+          <a href="https://twitter.com/bisryyy" class="icons">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/BisRy" class="icons">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/BisRyy/ReBook-Landing-Page" class="icons">
+              <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <h2>REBOOK &copy; All rights reserved 2023.</h2>
+    </footer>
 </body>
+<!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+
 </html>

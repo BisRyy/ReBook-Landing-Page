@@ -13,11 +13,11 @@ import terrainDepthVertexShader from './shaders/terrainDepth/vertex.glsl'
 import terrainDepthFragmentShader from './shaders/terrainDepth/fragment.glsl'
 import overlayVertexShader from './shaders/overlay/vertex.glsl'
 import overlayFragmentShader from './shaders/overlay/fragment.glsl'
-// import featureImg1 from '../static/about.png'
-import recommendImg from '../static/recommend.png'
-import bookStackImg from '../static/books.png'
-import communityImg from '../static/group.png'
-import rocketImg from '../static/images/rocket image.png'
+
+// import recommendImg from '../static/recommend.png'
+// import bookStackImg from '../static/books.png'
+// import communityImg from '../static/group.png'
+// import rocketImg from '../static/images/rocket image.png'
 
 /**
  * Base
@@ -79,11 +79,11 @@ window.addEventListener('resize', () =>
 /**
  * Images
  */
-const feature =  document.querySelectorAll("img")
-feature[0].src = recommendImg;
-feature[1].src = bookStackImg;
-feature[2].src = communityImg;
-feature[3].src = rocketImg;
+// const feature =  document.querySelectorAll("img")
+// feature[0].src = bookStackImg;
+// feature[1].src = recommendImg;
+// feature[2].src = rocketImg;
+// feature[3].src = communityImg;
 
 /**
  * Camera
@@ -200,86 +200,6 @@ terrain.texture.update = () =>
 
 terrain.texture.update()
 
-gui
-    .Register({
-        folder: 'terrain',
-        type: 'folder',
-        label: 'terrainTexture',
-        open: false
-    })
-    
-gui
-    .Register({
-        folder: 'terrainTexture',
-        object: terrain.texture,
-        property: 'visible',
-        type: 'checkbox',
-        label: 'visible',
-        onChange: () =>
-        {
-            if(terrain.texture.visible)
-            {
-                document.body.append(terrain.texture.canvas)
-            }
-            else
-            {
-                document.body.removeChild(terrain.texture.canvas)
-            }
-        }
-    })
-
-gui
-    .Register({
-        folder: 'terrainTexture',
-        object: terrain.texture,
-        property: 'linesCount',
-        type: 'range',
-        label: 'linesCount',
-        min: 1,
-        max: 10,
-        step: 1,
-        onChange: terrain.texture.update
-    })
-
-gui
-    .Register({
-        folder: 'terrainTexture',
-        object: terrain.texture,
-        property: 'bigLineWidth',
-        type: 'range',
-        label: 'bigLineWidth',
-        min: 0,
-        max: 0.5,
-        step: 0.0001,
-        onChange: terrain.texture.update
-    })
-
-gui
-    .Register({
-        folder: 'terrainTexture',
-        object: terrain.texture,
-        property: 'smallLineWidth',
-        type: 'range',
-        label: 'smallLineWidth',
-        min: 0,
-        max: 0.1,
-        step: 0.0001,
-        onChange: terrain.texture.update
-    })
-
-gui
-    .Register({
-        folder: 'terrainTexture',
-        object: terrain.texture,
-        property: 'smallLineAlpha',
-        type: 'range',
-        label: 'smallLineAlpha',
-        min: 0,
-        max: 1,
-        step: 0.001,
-        onChange: terrain.texture.update
-    })
-
 // Geometry
 terrain.geometry = new THREE.PlaneGeometry(1, 1, 1000, 1000)
 terrain.geometry.rotateX(- Math.PI * 0.5)
@@ -306,203 +226,6 @@ terrain.uniforms = {
     uHslLightnessFrequency: { value: 20.0 }
 }
 
-gui
-    .Register({
-        folder: 'terrain',
-        type: 'folder',
-        label: 'terrainMaterial',
-        open: false
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevation,
-        property: 'value',
-        type: 'range',
-        label: 'uElevation',
-        min: 0,
-        max: 5,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationValley,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationValley',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationValleyFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationValleyFrequency',
-        min: 0,
-        max: 10,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationGeneral,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationGeneral',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationGeneralFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationGeneralFrequency',
-        min: 0,
-        max: 10,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationDetails,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationDetails',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uElevationDetailsFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uElevationDetailsFrequency',
-        min: 0,
-        max: 10,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uTextureFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uTextureFrequency',
-        min: 0.01,
-        max: 50,
-        step: 0.01
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uTextureOffset,
-        property: 'value',
-        type: 'range',
-        label: 'uTextureOffset',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslHue,
-        property: 'value',
-        type: 'range',
-        label: 'uHslHue',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslHueOffset,
-        property: 'value',
-        type: 'range',
-        label: 'uHslHueOffset',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslHueFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uHslHueFrequency',
-        min: 0,
-        max: 50,
-        step: 0.01
-    })
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslTimeFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uHslTimeFrequency',
-        min: 0,
-        max: 0.2,
-        step: 0.001
-    })
-    
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslLightness,
-        property: 'value',
-        type: 'range',
-        label: 'uHslLightness',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
- 
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslLightnessVariation,
-        property: 'value',
-        type: 'range',
-        label: 'uHslLightnessVariation',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-gui
-    .Register({
-        folder: 'terrainMaterial',
-        object: terrain.uniforms.uHslLightnessFrequency,
-        property: 'value',
-        type: 'range',
-        label: 'uHslLightnessFrequency',
-        min: 0,
-        max: 50,
-        step: 0.01
-    })
 
 // Material
 terrain.material = new THREE.ShaderMaterial({
@@ -579,77 +302,6 @@ window.requestAnimationFrame(() =>
     gsap.to(overlay.material.uniforms.uVignetteOffset, { delay: 0.4, duration: 3, value: - 0.165, ease: 'power2.out' })
 })
 
-gui
-    .Register({
-        type: 'folder',
-        label: 'overlay',
-        open: false
-    })
-
-gui
-    .Register({
-        folder: 'overlay',
-        object: overlay.vignetteColor,
-        property: 'value',
-        type: 'color',
-        label: 'vignetteColor',
-        format: 'hex',
-        onChange: () =>
-        {
-            overlay.vignetteColor.instance.set(overlay.vignetteColor.value)
-        }
-    })
-
-gui
-    .Register({
-        folder: 'overlay',
-        object: overlay.material.uniforms.uVignetteMultiplier,
-        property: 'value',
-        type: 'range',
-        label: 'uVignetteMultiplier',
-        min: 0,
-        max: 5,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'overlay',
-        object: overlay.material.uniforms.uVignetteOffset,
-        property: 'value',
-        type: 'range',
-        label: 'uVignetteOffset',
-        min: - 2,
-        max: 2,
-        step: 0.001
-    })
-
-gui
-    .Register({
-        folder: 'overlay',
-        object: overlay.overlayColor,
-        property: 'value',
-        type: 'color',
-        label: 'overlayColor',
-        format: 'hex',
-        onChange: () =>
-        {
-            overlay.overlayColor.instance.set(overlay.overlayColor.value)
-        }
-    })
-
-gui
-    .Register({
-        folder: 'overlay',
-        object: overlay.material.uniforms.uOverlayAlpha,
-        property: 'value',
-        type: 'range',
-        label: 'uOverlayAlpha',
-        min: 0,
-        max: 1,
-        step: 0.001
-    })
-
 /**
  * Renderer
  */
@@ -668,20 +320,6 @@ gui
         type: 'folder',
         label: 'renderer',
         open: false
-    })
-
-gui
-    .Register({
-        folder: 'renderer',
-        object: guiDummy,
-        property: 'clearColor',
-        type: 'color',
-        label: 'clearColor',
-        format: 'hex',
-        onChange: () =>
-        {
-            renderer.setClearColor(guiDummy.clearColor, 1)
-        }
     })
 
 // Effect composer
@@ -716,121 +354,16 @@ const bokehPass = new BokehPass(
 // bokehPass.enabled = false
 effectComposer.addPass(bokehPass)
 
-gui
-    .Register({
-        type: 'folder',
-        label: 'bokehPass',
-        open: false
-    })
-
-gui
-    .Register({
-        folder: 'bokehPass',
-        object: bokehPass,
-        property: 'enabled',
-        type: 'checkbox',
-        label: 'bokehPass'
-    })
-    
-gui
-    .Register({
-        folder: 'bokehPass',
-        object: bokehPass.materialBokeh.uniforms.focus,
-        property: 'value',
-        type: 'range',
-        label: 'focus',
-        min: 0,
-        max: 10,
-        step: 0.01
-    })
-
-gui
-    .Register({
-        folder: 'bokehPass',
-        object: bokehPass.materialBokeh.uniforms.aperture,
-        property: 'value',
-        type: 'range',
-        label: 'aperture',
-        min: 0.0002,
-        max: 0.1,
-        step: 0.0001
-    })
-
-gui
-    .Register({
-        folder: 'bokehPass',
-        object: bokehPass.materialBokeh.uniforms.maxblur,
-        property: 'value',
-        type: 'range',
-        label: 'maxblur',
-        min: 0,
-        max: 0.02,
-        step: 0.0001
-    })
-
 // Unreal bloom pass
 const unrealBloomPass = new UnrealBloomPass(new THREE.Vector2(sizes.width, sizes.height), 1.5, 0.4, 0.85)
 unrealBloomPass.enabled = false
 effectComposer.addPass(unrealBloomPass)
 
-gui
-    .Register({
-        type: 'folder',
-        label: 'unrealBloomPass',
-        open: false
-    })
-
-gui
-    .Register({
-        folder: 'unrealBloomPass',
-        object: unrealBloomPass,
-        property: 'enabled',
-        type: 'checkbox',
-        label: 'unrealBloomPass'
-    })
-
-gui
-    .Register({
-        folder: 'unrealBloomPass',
-        object: unrealBloomPass,
-        property: 'threshold',
-        type: 'range',
-        label: 'threshold',
-        min: 0,
-        max: 1,
-        step: 0.0001
-    })
-
-gui
-    .Register({
-        folder: 'unrealBloomPass',
-        object: unrealBloomPass,
-        property: 'strength',
-        type: 'range',
-        label: 'strength',
-        min: 0,
-        max: 3,
-        step: 0.0001
-    })
-
-gui
-    .Register({
-        folder: 'unrealBloomPass',
-        object: unrealBloomPass,
-        property: 'radius',
-        type: 'range',
-        label: 'radius',
-        min: 0,
-        max: 1,
-        step: 0.0001
-    })
-
-
 /**
  * View
  */
 const view = {}
-view.index = 0
+view.index = 2
 view.settings = [
     {
         position: { x: 0, y: 2.124, z: - 0.172 },
@@ -928,27 +461,6 @@ window.setInterval(() =>
     view.change((view.index + 1) % view.settings.length)
 }, 7500)
 
-gui
-    .Register({
-        type: 'folder',
-        label: 'view',
-        open: true
-    })
-
-for(const _settingIndex in view.settings)
-{
-    gui
-        .Register({
-            type: 'button',
-            folder: 'view',
-            label: `change(${_settingIndex})`,
-            action: () =>
-            {
-                view.change(_settingIndex)
-            }
-        })
-}
-
 // Focus animation
 const changeFocus = () =>
 {
@@ -1013,27 +525,6 @@ presets.apply = (_index) =>
     terrain.uniforms.uHslHueOffset.value = presetsSettings.terrainHueOffset
 
     renderer.setClearColor(presetsSettings.clearColor, 1)
-}
-
-gui
-    .Register({
-        type: 'folder',
-        label: 'presets',
-        open: true
-    })
-
-for(const _presetsIndex in presets.settings)
-{
-    gui
-        .Register({
-            type: 'button',
-            folder: 'presets',
-            label: `apply(${_presetsIndex})`,
-            action: () =>
-            {
-                presets.apply(_presetsIndex)
-            }
-        })
 }
 
 /**
